@@ -9,7 +9,9 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "eslint --cache --color --ext .jsx,.js src"
+    "lint": "eslint --cache --color --ext .jsx,.js src",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "zps_n",
@@ -47,9 +49,9 @@
     }
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "electron-compile": "^6.4.3",
     "electron-devtools-installer": "^2.1.0",
-    "electron-reload": "^1.3.0",
     "electron-squirrel-startup": "^1.0.0",
     "husky": "^1.1.4",
     "lint-staged": "^8.0.5",
@@ -71,7 +73,13 @@
     "eslint-config-airbnb": "^15",
     "eslint-plugin-import": "^2",
     "eslint-plugin-jsx-a11y": "^5",
-    "eslint-plugin-react": "^7"
+    "eslint-plugin-react": "^7",
+    "@storybook/react": "^4.0.7",
+    "@storybook/addon-actions": "^4.0.7",
+    "@storybook/addon-links": "^4.0.7",
+    "@storybook/addons": "^4.0.7",
+    "@babel/core": "^7.1.6",
+    "babel-loader": "^8.0.4"
   },
   "husky": {
     "hooks": {

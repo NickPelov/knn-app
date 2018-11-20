@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default class App extends React.Component {
+export default class Menu extends React.Component {
 	constructor(props) {
 		super(props);
 		// Don't call this.setState() here!
@@ -10,7 +10,7 @@ export default class App extends React.Component {
 
 	increment = () => {
 		let { counter } = this.state;
-		this.setState({ counter: counter + 1 });
+		this.setState({ counter: counter + 110 });
 	};
 
 	render() {
