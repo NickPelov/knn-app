@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Button from '../components/Button/Button';
 
 export default class Menu extends React.Component {
 	constructor(props) {
@@ -18,7 +19,15 @@ export default class Menu extends React.Component {
 		return (
 			<div>
 				<li onClick={this.increment}>
-					<Link to="/">Home{counter}</Link>
+					<Link to="/">
+						<h1>Home</h1>
+						<h2>Home</h2>
+						<h3>Home</h3>
+						<h4>Home</h4>
+						<h5>Home</h5>
+						<h6>Home</h6>
+						{counter}
+					</Link>
 				</li>
 				<li>
 					<Link to="/about/">About</Link>

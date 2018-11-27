@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import './Button.css';
+// import './Button.scss';
 
 export default class Button extends React.Component {
 	static defaultProps = {
