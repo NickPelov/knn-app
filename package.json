@@ -1,95 +1,95 @@
 {
-  "name": "electron-test",
-  "productName": "electron-test",
-  "version": "1.0.0",
-  "description": "My Electron application description",
-  "main": "src/index.js",
-  "scripts": {
-    "start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make",
-    "publish": "electron-forge publish",
-    "lint": "eslint --cache --color --ext .jsx,.js src",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
-  },
-  "keywords": [],
-  "author": "zps_n",
-  "license": "MIT",
-  "config": {
-    "forge": {
-      "make_targets": {
-        "win32": [
-          "squirrel"
-        ],
-        "darwin": [
-          "zip"
-        ],
-        "linux": [
-          "deb",
-          "rpm"
-        ]
-      },
-      "electronPackagerConfig": {
-        "packageManager": "yarn"
-      },
-      "electronWinstallerConfig": {
-        "name": "electron_test"
-      },
-      "electronInstallerDebian": {},
-      "electronInstallerRedhat": {},
-      "github_repository": {
-        "owner": "",
-        "name": ""
-      },
-      "windowsStoreConfig": {
-        "packageName": "",
-        "name": "electrontest"
-      }
-    }
-  },
-  "dependencies": {
-    "classnames": "^2.2.6",
-    "electron-compile": "^6.4.3",
-    "electron-devtools-installer": "^2.1.0",
-    "electron-squirrel-startup": "^1.0.0",
-    "husky": "^1.1.4",
-    "lint-staged": "^8.0.5",
-    "prettier": "^1.15.2",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-hot-loader": "^3.0.0-beta.6",
-    "react-router-dom": "^4.3.1"
-  },
-  "devDependencies": {
-    "babel-plugin-transform-async-to-generator": "^6.24.1",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-es2015-classes": "^6.24.1",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "electron-forge": "^5.2.3",
-    "electron-prebuilt-compile": "3.0.6",
-    "eslint": "^3",
-    "eslint-config-airbnb": "^15",
-    "eslint-plugin-import": "^2",
-    "eslint-plugin-jsx-a11y": "^5",
-    "eslint-plugin-react": "^7",
-    "@storybook/react": "^4.0.7",
-    "@storybook/addon-actions": "^4.0.7",
-    "@storybook/addon-links": "^4.0.7",
-    "@storybook/addons": "^4.0.7",
-    "@babel/core": "^7.1.6",
-    "babel-loader": "^8.0.4"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --single-quote --write",
-      "git add"
-    ]
-  }
+	"name": "electron-test",
+	"productName": "electron-test",
+	"version": "1.0.0",
+	"description": "My Electron application description",
+	"main": "src/index.js",
+	"scripts": {
+		"start": "electron-forge start",
+		"package": "electron-forge package",
+		"make": "electron-forge make",
+		"publish": "electron-forge publish",
+		"lint": "eslint --cache --color --ext .jsx,.js src",
+		"storybook": "start-storybook -p 6006",
+		"build-storybook": "build-storybook"
+	},
+	"keywords": [],
+	"author": "zps_n",
+	"license": "MIT",
+	"config": {
+		"forge": {
+			"make_targets": {
+				"win32": [
+					"squirrel"
+				],
+				"darwin": [
+					"zip"
+				],
+				"linux": [
+					"deb",
+					"rpm"
+				]
+			},
+			"electronPackagerConfig": {
+				"packageManager": "yarn"
+			},
+			"electronWinstallerConfig": {
+				"name": "electron_test"
+			},
+			"electronInstallerDebian": {},
+			"electronInstallerRedhat": {},
+			"github_repository": {
+				"owner": "",
+				"name": ""
+			},
+			"windowsStoreConfig": {
+				"packageName": "",
+				"name": "electrontest"
+			}
+		}
+	},
+	"dependencies": {
+		"classnames": "^2.2.6",
+		"electron-compile": "^6.4.3",
+		"electron-devtools-installer": "^2.1.0",
+		"electron-squirrel-startup": "^1.0.0",
+		"husky": "^1.1.4",
+		"lint-staged": "^8.0.5",
+		"prettier": "^1.15.2",
+		"react": "^16.6.3",
+		"react-dom": "^16.6.3",
+		"react-hot-loader": "^3.0.0-beta.6",
+		"react-router-dom": "^4.3.1"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.1.6",
+		"@storybook/addon-actions": "^4.0.7",
+		"@storybook/addon-links": "^4.0.7",
+		"@storybook/addons": "^4.0.7",
+		"@storybook/react": "^4.0.7",
+		"babel-loader": "^8.0.4",
+		"babel-plugin-transform-async-to-generator": "^6.24.1",
+		"babel-plugin-transform-class-properties": "^6.24.1",
+		"babel-plugin-transform-es2015-classes": "^6.24.1",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-react": "^6.24.1",
+		"electron-forge": "^5.2.3",
+		"electron-prebuilt-compile": "3.0.6",
+		"eslint": "^3",
+		"eslint-config-airbnb": "^15",
+		"eslint-plugin-import": "^2",
+		"eslint-plugin-jsx-a11y": "^5",
+		"eslint-plugin-react": "^7"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+			"prettier --single-quote --write",
+			"git add"
+		]
+	}
 }

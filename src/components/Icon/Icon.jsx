@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import Icon from '../Icon/Icon';
+import Icon from './Icon';
 
 export default class Button extends React.Component {
 	static defaultProps = {
 		type: 'button',
 		buttonType: 'primary',
+		filled: true,
 	};
 
 	static propTypes = {
@@ -30,8 +31,8 @@ export default class Button extends React.Component {
 				style={style}
 				className={classNames('button', className, buttonType, {
 					disabled: disabled,
-					filled: filled && !disabled && !borderless,
-					borderless: borderless && !filled && !disabled,
+					filled: filled && !disabled,
+					borderless: borderless,
 					icononly: icon && !label,
 				})}
 				type={type}

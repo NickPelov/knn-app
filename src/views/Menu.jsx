@@ -20,13 +20,8 @@ export default class Menu extends React.Component {
 			<div>
 				<li onClick={this.increment}>
 					<Link to="/">
-						<h1>Home</h1>
-						<h2>Home</h2>
-						<h3>Home</h3>
-						<h4>Home</h4>
-						<h5>Home</h5>
-						<h6>Home</h6>
-						{counter}
+						{' '}
+						Hosmessss {counter} <Button filled={true} label={'Increment'} />
 					</Link>
 				</li>
 				<li>
@@ -34,12 +29,6 @@ export default class Menu extends React.Component {
 				</li>
 				<li>
 					<Link to="/users/">Users</Link>
-				</li>
-				<li>
-					<Link to="/">Home</Link>
-				</li>
-				<li>
-					<Link to="/">Home</Link>
 				</li>
 			</div>
 		);

@@ -3298,7 +3298,7 @@ cheerio@^0.20.0:
   optionalDependencies:
     jsdom "^7.0.2"
 
-chokidar@^2.0.2:
+chokidar@^2.0.0, chokidar@^2.0.2:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-2.0.4.tgz#356ff4e2b0e8e43e322d18a372460bbcf3accd26"
   integrity sha512-z9n7yt9rOvIJrMhvDtDictKrkFHeihkNl6uWMmZlmL6tJtX9Cs+87oK+teBx+JIgzvbX3yZHT3eF8vpbDxHJXQ==
@@ -10613,6 +10613,13 @@ sass.js@^0.10.1:
   version "0.10.12"
   resolved "https://registry.yarnpkg.com/sass.js/-/sass.js-0.10.12.tgz#6510601c034ba832e5b1257ba47b46cbee4d55f0"
   integrity sha512-/Mt92BqRi4IjtQjfRBqwwhv4LlpNTVQs47f48qLeHb8MT23o2hbT7RJpqf/wuSfUnZzcwV9jliDvBisvqqzwQA==
+
+sass@^1.15.1:
+  version "1.15.1"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.15.1.tgz#25a03f6813413540210580b670628360c36267d3"
+  integrity sha512-WiDa5BsePB/rQEbh/Fv2pVDUCasxuRYjW7GsWx8Ld23LY61vx1VV5Mzf/7mu5kLWKMryMqo65fzYL34HgaM47w==
+  dependencies:
+    chokidar "^2.0.0"
 
 sax@0.4.2:
   version "0.4.2"

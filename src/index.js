@@ -22,10 +22,9 @@ const createWindow = async () => {
 
 	// and load the index.html of the app.
 	mainWindow.loadURL(`file://${__dirname}/index.html`);
-
 	// Open the DevTools.
 	if (isDevMode) {
-		await installExtension(REACT_DEVELOPER_TOOLS);
+		await installExtension(REACT_DEVELOPER_TOOLS.id);
 		mainWindow.webContents.openDevTools();
 	}
 

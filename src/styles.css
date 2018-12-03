@@ -4,8 +4,8 @@ h1 {
 	font-weight: 300;
 	text-decoration: inherit;
 	text-transform: inherit;
-	font-size: 6rem;
-	line-height: 6rem;
+	font-size: 5rem;
+	line-height: 5rem;
 	letter-spacing: -0.01562em;
 }
 h2 {
@@ -69,4 +69,12 @@ p {
 a {
 	color: #0060b6;
 	text-decoration: none;
+}
+
+body {
+	font-family: Roboto, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 400;
+	text-decoration: inherit;
+	text-transform: inherit;
 }
