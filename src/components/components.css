@@ -1,7 +1,7 @@
-/* @import url(./Badge/Badge.css); */
+@import url(./Badge/Badge.css);
 @import url(./Button/Button.css);
-/* @import url(./Card/Card.css);
-@import url(./Checkbox/Checkbox.css);
+@import url(./Card/Card.css);
+/* @import url(./Checkbox/Checkbox.css);
 @import url(./Divider/Divider.css);
 @import url(./EditableTextField/EditableTextField.css);
 @import url(./ExpansionPanel/ExpansionPanel.css);

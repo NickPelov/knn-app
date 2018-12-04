@@ -65,6 +65,8 @@ p {
 	font-weight: 300;
 	text-decoration: inherit;
 	text-transform: inherit;
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
 }
 a {
 	color: #0060b6;

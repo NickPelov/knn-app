@@ -1,8 +1,12 @@
 import React from 'react';
-import Router from './views/Router';
+import classNames from 'classnames';
 
-export default class Card extends React.Component {
-	render() {
-		return <div />;
-	}
-}
+const Card = (props) => {
+	const { children, className, style } = props;
+	return (
+		<div className={classNames('card', className)} style={style}>
+			{children}
+		</div>
+	);
+};
+export default Card;

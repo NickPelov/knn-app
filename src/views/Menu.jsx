@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../components/Button/Button';
-
+import Badge from '../components/Badge/Badge';
+import Card from '../components/Card/Card';
 export default class Menu extends React.Component {
 	constructor(props) {
 		super(props);
-		// Don't call this.setState() here!
 		this.state = { counter: 0 };
 	}
 
@@ -17,20 +17,20 @@ export default class Menu extends React.Component {
 	render() {
 		const { counter } = this.state;
 		return (
-			<div>
-				<li onClick={this.increment}>
-					<Link to="/">
-						{' '}
-						Hosmessss {counter} <Button filled={true} label={'Increment'} />
-					</Link>
-				</li>
-				<li>
-					<Link to="/about/">About</Link>
-				</li>
-				<li>
-					<Link to="/users/">Users</Link>
-				</li>
-			</div>
+			<Card>
+				<Link to="/" onClick={this.increment}>
+					{' '}
+					Hosmessss {counter}
+				</Link>
+				<Link to="/about/">
+					<Badge value={3}>About</Badge>
+				</Link>
+				<Link to="/users/">
+					<Badge value={1} style={{ backgroundColor: 'red' }}>
+						<Button label={'button'} filled />
+					</Badge>
+				</Link>
+			</Card>
 		);
 	}
 }
