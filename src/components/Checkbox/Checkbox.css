@@ -1,0 +1,62 @@
+/* Stylesheet for the Card.jsx component */
+.checkbox-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	user-select: none;
+	cursor: pointer;
+}
+.checkbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 24px;
+	height: 24px;
+	border: solid;
+	border-color: #0000008a;
+	border-radius: 10%;
+	border-width: 2px;
+}
+
+.checkbox.selected {
+	background-color: var(--sky-blue);
+	border-color: var(--sky-blue);
+}
+
+.checkmark {
+	position: relative;
+	width: 8px;
+	height: 16px;
+	border: solid;
+	border-width: 0 3px 3px 0;
+	transform: rotate(45deg);
+	bottom: 2px;
+	border-color: white;
+}
+
+.checkbox.disabled.selected {
+	background-color: #9a9a9a;
+}
+
+.checkbox.disabled {
+	border-color: #9a9a9a;
+}
+.checkbox-effects {
+	padding: 15px;
+	border-radius: 50%;
+	background-position: center;
+	transition: background 0.4s;
+	transition-delay: 0s, 0s;
+}
+.checkbox-effects.disabled {
+	pointer-events: none;
+}
+.checkbox-effects:hover {
+	background-color: #eaf3f8;
+}
+.checkbox-effects:focus {
+	background: #add1e6 radial-gradient(circle, transparent 1%, #add1e6 1%) center/15000%;
+}
+.checkbox-effects:active {
+	background: #84bad9 radial-gradient(circle, transparent 1%, #84bad9 1%) center/15000%;
+}
