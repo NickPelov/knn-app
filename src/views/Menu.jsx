@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import Button from '../components/Button/Button';
 import Badge from '../components/Badge/Badge';
 import Card from '../components/Card/Card';
+import Icon from '../components/Icon/Icon';
+
 export default class Menu extends React.Component {
 	constructor(props) {
 		super(props);
@@ -29,6 +31,10 @@ export default class Menu extends React.Component {
 					<Badge value={1} style={{ backgroundColor: 'red' }}>
 						<Button label={'button'} filled />
 					</Badge>
+				</Link>
+				<Link to="/about/">
+					<Icon icon={'icon-facebook'} />
+					About
 				</Link>
 			</Card>
 		);

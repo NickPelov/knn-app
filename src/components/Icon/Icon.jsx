@@ -1,46 +1,42 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { PureComponent } from 'react';
 import classNames from 'classnames';
-import Icon from './Icon';
+import PropTypes from 'prop-types';
 
-export default class Button extends React.Component {
-	static defaultProps = {
-		type: 'button',
-		buttonType: 'primary',
-		filled: true,
-	};
+const Icon = (props) => {
+	const { icon, onClick, style, className } = props;
+	function renderSize() {
+		const { size } = props;
+		let styles = '';
 
-	static propTypes = {
-		label: PropTypes.string,
-		className: PropTypes.string,
-		type: PropTypes.string.isRequired,
-		buttonType: PropTypes.oneOf(['primary', 'accept', 'decline', 'reset', 'login']),
-		style: PropTypes.any,
-		onClick: PropTypes.func,
-		icon: PropTypes.string,
-		disabled: PropTypes.bool,
-		filled: PropTypes.bool,
-		borderless: PropTypes.bool,
-	};
+		switch (size) {
+			case 'S':
+				styles = 'icon-lg';
+				break;
+			case 'M':
+				styles = 'icon-2x';
+				break;
+			case 'L':
+				styles = 'icon-3x';
+				break;
+			case 'XL':
+				styles = 'icon-4x';
+				break;
+			case 'XXL':
+				styles = 'icon-5x';
+				break;
+			default:
+				break;
+		}
 
-	render() {
-		const { type, buttonType, disabled, filled, label, className, onClick, icon, borderless, style } = this.props;
-
-		return (
-			<button
-				style={style}
-				className={classNames('button', className, buttonType, {
-					disabled: disabled,
-					filled: filled && !disabled,
-					borderless: borderless,
-					icononly: icon && !label,
-				})}
-				type={type}
-				onClick={!disabled ? onClick : undefined}>
-				<div>
-					{label} {icon ? <Icon icon={icon} /> : undefined}
-				</div>
-			</button>
-		);
+		return styles;
 	}
-}
+
+	return <div className={classNames('icon', icon, renderSize(), className)} aria-hidden="true" onClick={onClick} style={style} />;
+};
+
+Icon.propTypes = {
+	icon: PropTypes.string.isRequired,
+	onClick: PropTypes.func,
+	size: PropTypes.oneOfType([PropTypes.oneOf(['S', 'M', 'L', 'XL', 'XXL']), PropTypes.number]),
+};
+export default Icon;

@@ -13,11 +13,4 @@ storiesOf('Divider', module)
 			<Divider label={'box'} onClick={action('clicked')} />
 			<p>Createa a storybook</p>
 		</div>
-	))
-	.add('Disabled', () => (
-		<div>
-			<Divider label={'box'} onClick={action('clicked')} />
-			<br />
-			<Divider label={'box'} selected onClick={action('clicked')} />
-		</div>
 	));
