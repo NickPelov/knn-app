@@ -1,0 +1,8 @@
+/* Stylesheet for the Divider.jsx component */
+.divider {
+	height: 2px;
+	width: 90%;
+	margin: 10px 0px;
+	border-radius: 5%;
+	background-color: var(--gold-leaf);
+}
