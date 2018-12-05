@@ -1,6 +1,7 @@
 import { configure, addDecorator } from '@storybook/react';
 import '../src/styles.css';
 import '../src/components/components.css';
+import '../src/assets/icons/style.css';
 import { withBackgrounds } from '@storybook/addon-backgrounds';
 
 addDecorator(
