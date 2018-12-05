@@ -12,13 +12,13 @@ storiesOf('Card', module)
 	.addDecorator(centered)
 	.add('Default', () => <Card style={{ width: '500px', height: '500px' }} />)
 	.add('With content', () => (
-		<Card style={{ width: '300px', height: '40px' }}>
-			<div style={{ display: 'flex', justifyContent: 'space-evenly', width: '300px', height: '50px', color: '#d9b310' }}>
-				<div> Home</div>
-				<div>
+		<Card>
+			<div style={{ display: 'flex', color: '#d9b310' }}>
+				<div style={{ margin: '2px 10px 2px 10px' }}> Home</div>
+				<div style={{ margin: '2px 10px 2px 10px' }}>
 					<Badge value={3}>About</Badge>
 				</div>
-				<div>
+				<div style={{ margin: '2px 10px 2px 10px' }}>
 					<Badge value={1} style={{ backgroundColor: 'red' }}>
 						<Button label={'button'} filled />
 					</Badge>
