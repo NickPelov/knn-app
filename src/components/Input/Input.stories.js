@@ -8,6 +8,7 @@ import './Input.css';
 function validate(value) {
 	if (value.length > 5) return new Error('WOW long length');
 }
+
 storiesOf('Input', module)
 	.addDecorator(centered)
 	.add('Text Field Input', () => (
@@ -31,14 +32,29 @@ storiesOf('Input', module)
 	.add('With Prefix/Suffix', () => (
 		<div>
 			<h6>Prefix</h6>
-			<Input label={'Name'} onClick={action('clicked')} onChange={action('changed')} prefix={'$'} />
+			<Input label={'Amount'} onClick={action('clicked')} onChange={action('changed')} prefix={'$'} />
 			<h6>Suffix</h6>
-			<Input label={'Name'} onClick={action('clicked')} onChange={action('changed')} suffix={'cm'} />
+			<Input label={'Height'} onClick={action('clicked')} onChange={action('changed')} suffix={'cm'} />
 			<h6>With helper text</h6>
-			<Input label={'Name'} onClick={action('clicked')} onChange={action('changed')} prefix={'$'} suffix={'cm'} />
+			<Input label={'Amount'} onClick={action('clicked')} onChange={action('changed')} prefix={'$'} suffix={'0.00'} />
 		</div>
 	))
-
+	.add('Validated', () => (
+		<div>
+			<h6>{'Length < 5'}</h6>
+			<Input label={'City'} onValidate={validate} onClick={action('clicked')} onChange={action('changed')} />
+			<h6>With Icon</h6>
+			<Input label={'Height'} onValidate={validate} onClick={action('clicked')} onChange={action('changed')} clearable />
+			<h6>With helper text</h6>
+			<Input
+				label={'Amount'}
+				onValidate={validate}
+				onClick={action('clicked')}
+				onChange={action('changed')}
+				helperText={`I'm here to help`}
+			/>
+		</div>
+	))
 	.add('Disabled', () => (
 		<div>
 			<h6>Default</h6>
