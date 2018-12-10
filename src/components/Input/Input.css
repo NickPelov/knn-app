@@ -1,0 +1,104 @@
+/* Stylesheet for the Input.jsx component */
+.input {
+	box-sizing: border-box;
+	width: 280px;
+	height: 72px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	outline: none;
+}
+.input-container {
+	width: 280px;
+	height: 56px;
+	/* background-color: var(--sky-blue); */
+	/* color: var(--gold-leaf); */
+	border: 1px solid #888d92;
+	outline: none;
+	border-radius: 4px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: all 0.2s;
+}
+.input-container:hover {
+	border: 2px solid var(--border);
+}
+
+.input-container.focused {
+	border: 3px solid var(--sky-blue);
+}
+
+.input-container.error {
+	border: 2px solid var(--error);
+	color: var(--error);
+}
+.input-container.disabled {
+	border-color: var(--disabled);
+	color: var(--disabled);
+	pointer-events: none;
+}
+
+.input-field {
+	width: 280px;
+	height: 56px;
+	padding: 16px 30px 16px 26px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	transition: all 0.2s;
+}
+
+.input-textarea {
+	box-sizing: border-box;
+	padding: 16px 30px 16px 26px;
+	min-width: 280px;
+	min-height: 56px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	transition: all 0.2s;
+	resize: none;
+}
+.input-helper {
+	height: 16px;
+	align-self: flex-start;
+	transform: scale(0.85);
+}
+.input-helper.error {
+	color: var(--error);
+}
+.input-helper.disabled {
+	color: var(--disabled);
+	pointer-events: none;
+}
+.input-prefix {
+	position: absolute;
+	left: 14px;
+}
+.input-label {
+	position: absolute;
+	left: 20px;
+	padding: 0px 4px;
+	transition: all 0.2s;
+}
+.input-label.focused {
+	position: absolute;
+	background-color: white;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	padding: 0px 4px;
+	transform: translate(0px, -30px) scale(0.85);
+}
+.input-suffix {
+	position: relative;
+	right: 30px;
+}
+.input-icon {
+	position: absolute;
+	right: 8px;
+}
+.input-field.suffixed {
+	padding-right: 0px;
+}

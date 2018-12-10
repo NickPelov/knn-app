@@ -20,6 +20,10 @@
 	--sky-blue: #328dc1;
 	--gold-leaf: #d9b310;
 	--ivory-black: #1d2731;
+	--border: #0000008a;
+	--disabled: #cccccc;
+	--white: #ffffff;
+	--error: #b00020ff;
 }
 
 a {

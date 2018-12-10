@@ -39,8 +39,8 @@
 
 .button.disabled {
 	pointer-events: none;
-	background-color: #cccccc;
-	border-color: #cccccc;
+	background-color: var(--disabled);
+	border-color: var(--disabled);
 	transition: 0.2s;
 	cursor: default;
 }

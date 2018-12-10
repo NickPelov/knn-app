@@ -3,7 +3,7 @@
 	width: 20px;
 	height: 20px;
 	font-size: 0.75rem;
-	color: white;
+	color: var(--white);
 	background-color: var(--sky-blue);
 	border-radius: 50%;
 	position: absolute;

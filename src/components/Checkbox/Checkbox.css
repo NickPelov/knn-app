@@ -35,11 +35,11 @@
 }
 
 .checkbox.disabled.selected {
-	background-color: #9a9a9a;
+	background-color: var(--disabled);
 }
 
 .checkbox.disabled {
-	border-color: #9a9a9a;
+	border-color: var(--disabled);
 }
 .checkbox-effects {
 	padding: 15px;

@@ -22,7 +22,7 @@ export default class Menu extends React.Component {
 			<Card>
 				<Link to="/" onClick={this.increment}>
 					{' '}
-					Hosmessss {counter}
+					Home {counter}
 				</Link>
 				<Link to="/about/">
 					<Badge value={3}>About</Badge>
