@@ -158,14 +158,23 @@ export default class Input extends PureComponent {
 		return (
 			<div id={`input-${label}`} tabIndex="-1" onFocus={this.onFocus} className={classNames('input', className)} style={style}>
 				<div
-					className={classNames('input-container', {
-						focused: focused && !disabled,
-						error: error && !disabled,
-						disabled: disabled,
-					})}>
-					<label htmlFor={`input-${label}`} className={classNames('input-label', { focused: focused || value })}>
-						{label}
-					</label>
+					className={classNames(
+						'input-container',
+						{
+							focused: focused && !disabled,
+							error: error && !disabled,
+							disabled: disabled,
+						},
+						className
+					)}
+					style={style}>
+					{label ? (
+						<label htmlFor={`input-${label}`} className={classNames('input-label', { focused: focused || value })}>
+							{label}
+						</label>
+					) : (
+						undefined
+					)}
 					{!isTextarea ? (
 						<Fragment>
 							{prefix ? <span className={classNames('input-prefix')}>{prefix}</span> : undefined}
@@ -182,6 +191,7 @@ export default class Input extends PureComponent {
 								onBlur={this.onBlur}
 								onChange={this.onChange}
 								onClick={onClick}
+								style={style}
 								onKeyDown={onEnterClick ? this.onEnter : undefined}
 							/>
 							{suffix ? <span className={classNames('input-suffix')}>{suffix}</span> : undefined}
@@ -200,6 +210,7 @@ export default class Input extends PureComponent {
 							onBlur={this.onBlur}
 							onChange={this.onChange}
 							onClick={onClick}
+							style={style}
 							onKeyDown={onEnterClick ? this.onEnter : undefined}
 						/>
 					)}

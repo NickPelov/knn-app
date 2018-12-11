@@ -1,0 +1,51 @@
+/* Stylesheet for the Tooltip.jsx component */
+.tooltip-wrapper {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tooltip {
+	box-sizing: border-box;
+	visibility: hidden;
+	max-width: 300px;
+	height: 24px;
+	background-color: var(--border);
+	color: #fff;
+	border-radius: 4px;
+	padding: 2px 8px;
+	position: absolute;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.tooltip-wrapper:hover .tooltip {
+	visibility: visible;
+}
+
+.tooltip-text {
+	display: flex;
+	font-size: 0.75em;
+}
+
+.tooltip-title {
+}
+
+.tooltip.top {
+	bottom: 120%;
+}
+
+.tooltip.bottom {
+	top: 120%;
+}
+
+.tooltip.left {
+	right: 110%;
+}
+
+.tooltip.right {
+	left: 110%;
+}
