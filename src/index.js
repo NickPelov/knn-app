@@ -17,7 +17,7 @@ const createWindow = async () => {
 		height: 720,
 		frame: true,
 		autoHideMenuBar: true,
-		title: 'knn-app',
+		title: 'ZOEY',
 	});
 
 	// and load the index.html of the app.
