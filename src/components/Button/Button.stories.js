@@ -10,4 +10,6 @@ storiesOf('Button', module)
 	.add('Default', () => <Button label={'Click Me'} onClick={action('clicked')} />)
 	.add('Filled', () => <Button label={'Click Me'} filled onClick={action('clicked')} />)
 	.add('Borderless', () => <Button label={'Click Me'} borderless onClick={action('clicked')} />)
-	.add('Disabled', () => <Button label={'Click Me'} disabled onClick={action('clicked')} />);
+	.add('Disabled', () => <Button label={'Click Me'} disabled onClick={action('clicked')} />)
+	.add('With Icon', () => <Button label={'Click Me'} icon={'icon-account_circle'} onClick={action('clicked')} />)
+	.add('Icon only', () => <Button icon={'icon-account_circle'} onClick={action('clicked')} />);
