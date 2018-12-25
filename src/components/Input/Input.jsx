@@ -77,9 +77,7 @@ export default class Input extends PureComponent {
 		});
 
 		if (!error && onChange) {
-			onChange({
-				value,
-			});
+			onChange(value);
 		}
 	};
 
