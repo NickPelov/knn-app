@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'icomoon';
-	src: url('fonts/icomoon.ttf?s3sn9j') format('truetype'), url('fonts/icomoon.woff?s3sn9j') format('woff'),
-		url('fonts/icomoon.svg?s3sn9j#icomoon') format('svg');
+	src: url('fonts/icomoon.ttf?w1nqpu') format('truetype'), url('fonts/icomoon.woff?w1nqpu') format('woff'),
+		url('fonts/icomoon.svg?w1nqpu#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -21,6 +21,18 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-double-arrow:before {
+	content: '\e90c';
+}
+.icon-settings:before {
+	content: '\e912';
+}
+.icon-home:before {
+	content: '\e913';
+}
+.icon-tasks:before {
+	content: '\e915';
+}
 .icon-error_outline:before {
 	content: '\e906';
 }
@@ -30,7 +42,7 @@
 .icon-warning:before {
 	content: '\e908';
 }
-.icon-close:before {
+.icon-close1:before {
 	content: '\e90a';
 }
 .icon-cancel:before {
@@ -74,6 +86,18 @@
 }
 .icon-account_circle:before {
 	content: '\e853';
+}
+.icon-exit:before {
+	content: '\e90d';
+}
+.icon-message:before {
+	content: '\e90e';
+}
+.icon-arrow-right:before {
+	content: '\e90f';
+}
+.icon-calendar:before {
+	content: '\e911';
 }
 .icon-googleplus:before {
 	content: '\e900';
