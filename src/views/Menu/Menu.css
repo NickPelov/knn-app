@@ -1,0 +1,40 @@
+.menu-container {
+	box-sizing: border-box;
+	width: 5%;
+	height: 100vh;
+	background-color: var(--prussian-blue);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 0px;
+	transition: 0.2s;
+}
+
+.menu-container.collapsed {
+	width: 6%;
+}
+
+.menu-container.expanded {
+	width: 20%;
+}
+
+.menuitem {
+	display: flex;
+	margin: 5px 0px;
+	padding: 4px;
+	border-radius: 4px;
+	align-self: center;
+	transition: 0.3s;
+	align-items: center;
+	transition-delay: 0.2s;
+	transition: 0.2s;
+}
+
+.menuitem:hover {
+	background-color: var(--sky-blue);
+}
+
+.menuitem-icon {
+	color: white;
+}

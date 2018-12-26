@@ -7,20 +7,23 @@
 	margin: 0px 2px;
 }
 
-.icon-lg {
+.icon-s {
 	font-size: 1.33333333em;
 	line-height: 0.75em;
 	vertical-align: -15%;
 }
-.icon-2x {
+.icon-m {
+	font-size: 1.66em;
+}
+.icon-l {
 	font-size: 2em;
 }
-.icon-3x {
+.icon-xl {
 	font-size: 3em;
 }
-.icon-4x {
+.icon-xxl {
 	font-size: 4em;
 }
-.icon-5x {
+.icon-xxxl {
 	font-size: 5em;
 }

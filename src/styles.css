@@ -1,4 +1,5 @@
 @import url(./views/Auth/Auth.css);
+@import url(./views/Menu/Menu.css);
 h1 {
 	font-family: Roboto, sans-serif;
 	-webkit-font-smoothing: antialiased;

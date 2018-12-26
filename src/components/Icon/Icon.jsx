@@ -10,19 +10,22 @@ const Icon = (props) => {
 
 		switch (size) {
 			case 'S':
-				styles = 'icon-lg';
+				styles = 'icon-s';
 				break;
 			case 'M':
-				styles = 'icon-2x';
+				styles = 'icon-m';
 				break;
 			case 'L':
-				styles = 'icon-3x';
+				styles = 'icon-l';
 				break;
 			case 'XL':
-				styles = 'icon-4x';
+				styles = 'icon-xl';
 				break;
 			case 'XXL':
-				styles = 'icon-5x';
+				styles = 'icon-xxl';
+				break;
+			case 'XXXL':
+				styles = 'icon-xxl';
 				break;
 			default:
 				break;
