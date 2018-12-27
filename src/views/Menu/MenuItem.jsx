@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 const MenuItem = (props) => {
-	const { icon, text, isCollapsed, onClick } = props;
+	const { icon, text, key, selected, isCollapsed, onClick, className } = props;
 	return (
-		<div className={classNames('menuitem')} onClick={onClick}>
+		<div key={key} className={classNames('menuitem', className, { expanded: !isCollapsed, selected })} onClick={onClick}>
 			<Icon icon={icon} size={'M'} className={'menuitem-icon'} />
-			{!isCollapsed ? <div>{text}</div> : undefined}
+			{!isCollapsed ? <div className={'menuitem-text'}>{text}</div> : undefined}
 		</div>
 	);
 };

@@ -1,6 +1,7 @@
 .menu-container {
 	box-sizing: border-box;
-	width: 5%;
+	margin: 0px;
+	width: 20%;
 	height: 100vh;
 	background-color: var(--prussian-blue);
 	display: flex;
@@ -10,21 +11,26 @@
 	padding: 15px 0px;
 	transition: 0.2s;
 }
-
+.menu-container-top {
+	width: 70%;
+}
+.menu-container-bottom {
+	width: 70%;
+}
 .menu-container.collapsed {
-	width: 6%;
+	width: 52px;
 }
 
 .menu-container.expanded {
-	width: 20%;
+	width: 165px;
 }
 
 .menuitem {
+	box-sizing: border-box;
 	display: flex;
 	margin: 5px 0px;
 	padding: 4px;
 	border-radius: 4px;
-	align-self: center;
 	transition: 0.3s;
 	align-items: center;
 	transition-delay: 0.2s;
@@ -33,8 +39,25 @@
 
 .menuitem:hover {
 	background-color: var(--sky-blue);
+	cursor: pointer;
+}
+
+.menuitem.selected {
+	background-color: var(--sky-blue);
+	cursor: default;
 }
 
 .menuitem-icon {
 	color: white;
+	margin-right: 5px;
+}
+
+.menuitem-text {
+	color: white;
+	white-space: nowrap;
+	transform: scale(0.8);
+}
+
+.menuitem-arrow.expanded {
+	transform: scaleX(-1);
 }

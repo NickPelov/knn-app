@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'icomoon';
-	src: url('fonts/icomoon.ttf?w1nqpu') format('truetype'), url('fonts/icomoon.woff?w1nqpu') format('woff'),
-		url('fonts/icomoon.svg?w1nqpu#icomoon') format('svg');
+	src: url('fonts/icomoon.ttf?ia1nxf') format('truetype'), url('fonts/icomoon.woff?ia1nxf') format('woff'),
+		url('fonts/icomoon.svg?ia1nxf#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,6 +23,18 @@
 
 .icon-double-arrow:before {
 	content: '\e90c';
+}
+.icon-exit:before {
+	content: '\e90d';
+}
+.icon-message:before {
+	content: '\e90e';
+}
+.icon-arrow-right:before {
+	content: '\e90f';
+}
+.icon-calendar:before {
+	content: '\e911';
 }
 .icon-settings:before {
 	content: '\e912';
@@ -50,6 +62,26 @@
 }
 .icon-people:before {
 	content: '\e905';
+}
+.icon-googleplus:before {
+	content: '\e900';
+	color: #dc4e41;
+}
+.icon-bitbucket:before {
+	content: '\e901';
+	color: #0052cc;
+}
+.icon-facebook:before {
+	content: '\e902';
+	color: #3b5998;
+}
+.icon-twitter:before {
+	content: '\e903';
+	color: #1da1f2;
+}
+.icon-discord:before {
+	content: '\e904';
+	color: #7289da;
 }
 .icon-view_module:before {
 	content: '\e8f0';
@@ -86,36 +118,4 @@
 }
 .icon-account_circle:before {
 	content: '\e853';
-}
-.icon-exit:before {
-	content: '\e90d';
-}
-.icon-message:before {
-	content: '\e90e';
-}
-.icon-arrow-right:before {
-	content: '\e90f';
-}
-.icon-calendar:before {
-	content: '\e911';
-}
-.icon-googleplus:before {
-	content: '\e900';
-	color: #dc4e41;
-}
-.icon-bitbucket:before {
-	content: '\e901';
-	color: #0052cc;
-}
-.icon-facebook:before {
-	content: '\e902';
-	color: #3b5998;
-}
-.icon-twitter:before {
-	content: '\e903';
-	color: #1da1f2;
-}
-.icon-discord:before {
-	content: '\e904';
-	color: #7289da;
 }
