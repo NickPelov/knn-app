@@ -19,12 +19,14 @@ const styles = {
 	},
 };
 
-storiesOf('HorizontalScroll', module).add('Default', () => (
-	<HorizontalScroll>
-		<div style={styles.card} />
-		<div style={styles.card} />
-		<div style={styles.card} />
-		<div style={styles.card} />
-		<div style={styles.card} />
-	</HorizontalScroll>
-));
+storiesOf('HorizontalScroll', module)
+	.addDecorator(centered)
+	.add('Default', () => (
+		<HorizontalScroll>
+			<div style={styles.card} />
+			<div style={styles.card} />
+			<div style={styles.card} />
+			<div style={styles.card} />
+			<div style={styles.card} />
+		</HorizontalScroll>
+	));

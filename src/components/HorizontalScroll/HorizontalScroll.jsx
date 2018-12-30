@@ -9,11 +9,11 @@ const HorizontalScroll = (props) => {
 		const element = e.currentTarget;
 		e.preventDefault();
 		if (e.deltaY < 0) {
-			// scrolling up
-			scrollPosition -= 40;
-		} else if (e.deltaY > 0) {
-			//scrolling down
+			// scrolling down
 			scrollPosition += 40;
+		} else if (e.deltaY > 0) {
+			//scrolling up
+			scrollPosition -= 40;
 		}
 		if (scrollPosition < 0) {
 			scrollPosition = 0;
