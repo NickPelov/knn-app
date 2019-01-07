@@ -1,5 +1,8 @@
 @import url(./views/Auth/Auth.css);
 @import url(./views/Menu/Menu.css);
+@import url(./views/Home/Home.css);
+@import url(./views/AuthSelectUser/AuthSelectUser.css);
+@import url(./views/Settings/Settings.css);
 h1 {
 	font-family: Roboto, sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -9,6 +12,10 @@ h1 {
 	font-size: 5rem;
 	line-height: 5rem;
 	letter-spacing: -0.01562em;
+	-webkit-margin-before: 1.2em;
+	-webkit-margin-after: 1.2em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
 }
 h2 {
 	font-family: Roboto, sans-serif;
@@ -19,6 +26,10 @@ h2 {
 	font-size: 3.75rem;
 	line-height: 3.75rem;
 	letter-spacing: -0.00833em;
+	-webkit-margin-before: 1.2em;
+	-webkit-margin-after: 1.2em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
 }
 h3 {
 	font-family: Roboto, sans-serif;
@@ -29,6 +40,10 @@ h3 {
 	font-size: 3rem;
 	line-height: 3.125rem;
 	letter-spacing: normal;
+	-webkit-margin-before: 1.1em;
+	-webkit-margin-after: 1.1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
 }
 h4 {
 	font-family: Roboto, sans-serif;
@@ -39,6 +54,10 @@ h4 {
 	font-size: 2.125rem;
 	line-height: 2.5rem;
 	letter-spacing: 0.00735em;
+	-webkit-margin-before: 1.1em;
+	-webkit-margin-after: 1.1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
 }
 h5 {
 	font-family: Roboto, sans-serif;
@@ -49,6 +68,10 @@ h5 {
 	font-size: 1.5rem;
 	font-weight: 400;
 	letter-spacing: normal;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
 }
 h6 {
 	font-family: Roboto, sans-serif;
@@ -57,9 +80,13 @@ h6 {
 	line-height: 1.5rem;
 	text-decoration: inherit;
 	text-transform: inherit;
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 	font-weight: 500;
 	letter-spacing: 0.0125em;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
 }
 p {
 	font-family: Roboto, sans-serif;
@@ -82,7 +109,14 @@ body {
 	text-decoration: inherit;
 	text-transform: inherit;
 }
-
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
 .app-container {
 	display: flex;
 }
