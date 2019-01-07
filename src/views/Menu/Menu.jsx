@@ -6,7 +6,7 @@ import { withRouter } from 'react-router';
 
 class Menu extends React.Component {
 	state = {
-		isCollapsed: true,
+		isCollapsed: false,
 		selected: undefined,
 	};
 
