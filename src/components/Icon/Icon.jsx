@@ -25,7 +25,7 @@ const Icon = (props) => {
 				styles = 'icon-xxl';
 				break;
 			case 'XXXL':
-				styles = 'icon-xxl';
+				styles = 'icon-xxxl';
 				break;
 			default:
 				break;

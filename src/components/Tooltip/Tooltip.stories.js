@@ -15,17 +15,17 @@ storiesOf('Tooltip', module)
 				<Tooltip text={'Add'} position={'top'}>
 					<Button label={'Click Me'} onClick={action('clicked')} />
 				</Tooltip>
-				<Tooltip text={'Add'} position={'bottom'}>
+				<Tooltip text={'Verify Email'} position={'bottom'}>
 					<Button label={'Click Me'} onClick={action('clicked')} />
 				</Tooltip>
 			</div>
 			<br />
 			<br />
 			<div style={{ display: 'flex', flexDirection: 'row' }}>
-				<Tooltip text={'Add'} position={'left'}>
+				<Tooltip text={'This button gives you the answer to the universe'} position={'left'}>
 					<Button label={'Click Me'} onClick={action('clicked')} />
 				</Tooltip>
-				<Tooltip text={'Add'} position={'right'}>
+				<Tooltip text={'Solves world hunger'} position={'right'}>
 					<Button label={'Click Me'} onClick={action('clicked')} />
 				</Tooltip>
 			</div>

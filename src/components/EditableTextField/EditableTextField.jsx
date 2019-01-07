@@ -11,6 +11,13 @@ const EditableTextField = (props) => {
 				<Input label={label} value={text} className={classNames('editable-textfield', className)} style={style} />
 			) : (
 				<div className={classNames('editable-textfield', className)} style={style}>
+					{label ? (
+						<label htmlFor={`text-${label}`} className={classNames('editable-label')}>
+							{label}
+						</label>
+					) : (
+						undefined
+					)}
 					{text}
 				</div>
 			)}

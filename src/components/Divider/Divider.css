@@ -2,7 +2,7 @@
 .divider {
 	height: 2px;
 	width: 90%;
-	margin: 10px 0px;
+	margin: 10px;
 	border-radius: 5%;
-	background-color: var(--gold-leaf);
+	background-color: var(--prussian-blue);
 }

@@ -1,4 +1,10 @@
 /* Stylesheet for the Tooltip.jsx component */
 .editable-textfield {
-	width: 200px;
+	word-wrap: normal;
+	max-width: 400px;
+	min-width: 50px;
+}
+
+.editable-label {
+	font-weight: bold;
 }

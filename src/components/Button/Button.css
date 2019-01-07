@@ -50,3 +50,8 @@
 	color: var(--white);
 	opacity: 0.3;
 }
+
+.button.icononly {
+	width: 20px;
+	height: 30px;
+}
