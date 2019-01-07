@@ -1,0 +1,10 @@
+.home-container {
+	position: absolute;
+	left: 220px;
+}
+
+.home-projects-scroll {
+	position: relative;
+	left: 50px;
+	width: calc(100vw - 220px - 50px - 10px);
+}
