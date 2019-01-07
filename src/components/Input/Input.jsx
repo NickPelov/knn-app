@@ -149,16 +149,26 @@ export default class Input extends PureComponent {
 			onEnterClick,
 			clearable,
 			label,
+			helperText,
 		} = this.props;
 		const { error, focused } = this.state;
 		const value = this.getValue();
 
 		return (
-			<div id={`input-${label}`} tabIndex="-1" onFocus={this.onFocus} className={classNames('input', className)} style={style}>
+			<div
+				id={`input-${label}`}
+				tabIndex="-1"
+				onFocus={this.onFocus}
+				className={classNames(
+					{ 'input-wrapper': !isTextarea, 'input-wrapper-textarea': isTextarea, 'with-helpertext': error || helperText },
+					className
+				)}
+				style={style}>
 				<div
 					className={classNames(
-						'input-container',
 						{
+							'input-container': !isTextarea,
+							'input-container-textarea': isTextarea,
 							focused: focused && !disabled,
 							error: error && !disabled,
 							disabled: disabled,
@@ -166,7 +176,7 @@ export default class Input extends PureComponent {
 						className
 					)}
 					style={style}>
-					{label ? (
+					{label && !isTextarea ? (
 						<label htmlFor={`input-${label}`} className={classNames('input-label', { focused: focused || value })}>
 							{label}
 						</label>
@@ -224,7 +234,11 @@ export default class Input extends PureComponent {
 					)}
 				</div>
 
-				<span className={classNames('input-helper', { error: error, disabled: disabled })}>{this.renderHelperMessage()}</span>
+				{error || helperText ? (
+					<span className={classNames('input-helper', { error: error, disabled: disabled })}>{this.renderHelperMessage()}</span>
+				) : (
+					undefined
+				)}
 			</div>
 		);
 	}
