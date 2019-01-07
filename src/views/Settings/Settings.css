@@ -1,0 +1,57 @@
+.settings-menu {
+	height: 100vh;
+	width: 200px;
+	background-color: #c1c7d0;
+}
+
+.settings-container {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.settings-menu-title {
+	font-size: 0.7em;
+	margin-left: 10px;
+	color: #606368;
+}
+
+.settings-menu-item {
+	font-size: 0.7em;
+	padding: 5px 10px;
+}
+
+.settings-menu-item:hover {
+	background-color: #9a9fa6;
+	cursor: pointer;
+}
+
+.settings-menu-username {
+	margin-left: 10px;
+}
+
+.settings-content-container {
+	width: calc(100vw - 165px - 200px - 50px);
+	height: 100vh;
+	border: 1px solid black;
+	display: flex;
+}
+
+.settings-account-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.settings-account-initial-row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 50px 0px;
+}
+
+.settings-account-email-row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
