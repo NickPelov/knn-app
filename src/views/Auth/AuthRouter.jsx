@@ -1,14 +1,14 @@
 import React from 'react';
-
+import SignIn from './SignIn';
+import SignUp from './SignUp';
+import SelectUser from '../AuthSelectUser/SelectUser';
 const AuthRouter = () => (
 	<Router>
 		<div>
 			<Menu />
-			<Route path="/home" exact component={Home} />
-			<Route path="/messages" exact component={SignIn} />
-			<Route path="/calendar" component={About} />
-			<Route path="/tasks" component={Users} />
-			<Route path="/settings" component={Users} />
+			<Route path="/signup" exact component={SignUp} />
+			<Route path="/signin" exact component={SignIn} />
+			<Route path="/user-exists" component={SelectUser} />
 		</div>
 	</Router>
 );
