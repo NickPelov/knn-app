@@ -5,7 +5,6 @@
 	overflow-y: hidden;
 	overflow-x: auto;
 	white-space: nowrap;
-	width: calc(100vw - 200px);
 	flex-shrink: 0;
 }
 
