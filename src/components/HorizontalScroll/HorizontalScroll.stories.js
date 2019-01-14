@@ -14,15 +14,18 @@ const styles = {
 	card: {
 		width: '400px',
 		height: '350px',
-		backgroundColor: 'red',
 		border: 'solid black',
+	},
+	container: {
+		width: '1000px',
+		height: '350px',
 	},
 };
 
 storiesOf('HorizontalScroll', module)
 	.addDecorator(centered)
 	.add('Default', () => (
-		<HorizontalScroll>
+		<HorizontalScroll style={styles.container}>
 			<div style={styles.card} />
 			<div style={styles.card} />
 			<div style={styles.card} />

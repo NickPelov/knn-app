@@ -40,6 +40,6 @@ const Icon = (props) => {
 Icon.propTypes = {
 	icon: PropTypes.string.isRequired,
 	onClick: PropTypes.func,
-	size: PropTypes.oneOfType([PropTypes.oneOf(['S', 'M', 'L', 'XL', 'XXL']), PropTypes.number]),
+	size: PropTypes.oneOfType([PropTypes.oneOf(['S', 'M', 'L', 'XL', 'XXL', 'XXXL']), PropTypes.number]),
 };
 export default Icon;
