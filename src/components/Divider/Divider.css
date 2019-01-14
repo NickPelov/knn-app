@@ -1,8 +1,16 @@
 /* Stylesheet for the Divider.jsx component */
 .divider {
-	height: 2px;
+	height: 1px;
 	width: 90%;
 	margin: 10px;
-	border-radius: 5%;
-	background-color: var(--prussian-blue);
+	opacity: 0.32;
+	background-color: #000000;
+}
+
+.divider.vertical {
+	height: 80%;
+	width: 1px;
+	margin: 10px;
+	opacity: 0.32;
+	background-color: #000000;
 }
