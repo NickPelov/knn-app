@@ -1,5 +1,6 @@
 import React from 'react';
 import UserListItem from './UserListItem';
+import Divider from '../../components/Divider/Divider';
 // const Auth = React.lazy(() => import('./Auth'));
 
 export default class UserList extends React.Component {
@@ -30,7 +31,9 @@ export default class UserList extends React.Component {
 		return (
 			<div className={'auth-user-list-container'}>
 				{accounts.map((account) => (
-					<UserListItem key={account.id} title={account.name} subtitle={account.lastLogin} />
+					<div>
+						<UserListItem key={account.id} title={account.name} subtitle={account.lastLogin} />
+					</div>
 				))}
 			</div>
 		);
