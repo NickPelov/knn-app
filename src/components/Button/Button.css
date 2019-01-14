@@ -8,7 +8,7 @@
 	justify-content: center;
 	border-radius: 4px;
 	border: solid;
-	border-color: var(--sky-blue);
+	border-color: var(--primary-light);
 	text-transform: uppercase;
 	outline: none;
 	text-decoration: none;
@@ -19,7 +19,7 @@
 
 .button.filled {
 	border: none;
-	background-color: var(--sky-blue);
+	background-color: var(--primary-light);
 }
 
 .button.borderless {
@@ -27,13 +27,13 @@
 }
 
 .button:hover {
-	background: #4698c7 radial-gradient(circle, transparent 1%, #4698c7 1%) center/15000%;
+	background: #83c95b radial-gradient(circle, transparent 1%, #83c95b 1%) center/15000%;
 	box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
 	cursor: pointer;
 }
 
 .button:active {
-	background-color: #6fafd3;
+	background-color: #a2d684;
 	background-size: 100%;
 	transition: background 0s;
 }

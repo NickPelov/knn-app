@@ -9,12 +9,12 @@
 	left: 55%;
 	top: 73%;
 	border-radius: 50%;
-	background-color: gray;
+	background-color: var(--background-light);
 	border: 2px solid black;
 }
 
 .avatar-status.active {
-	background-color: rgb(0, 250, 0);
+	background-color: var(--primary-light);
 }
 
 .avatar-status.away {

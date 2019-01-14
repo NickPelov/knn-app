@@ -13,14 +13,14 @@
 	width: 24px;
 	height: 24px;
 	border: solid;
-	border-color: #0000008a;
+	border-color: var(--border);
 	border-radius: 10%;
 	border-width: 2px;
 }
 
 .checkbox.selected {
-	background-color: var(--sky-blue);
-	border-color: var(--sky-blue);
+	background-color: var(--primary-light);
+	border-color: var(--primary-light);
 }
 
 .checkmark {
@@ -52,11 +52,11 @@
 	pointer-events: none;
 }
 .checkbox-effects:hover {
-	background-color: #eaf3f8;
+	background-color: #e0f1d6;
 }
 .checkbox-effects:focus {
-	background: #add1e6 radial-gradient(circle, transparent 1%, #add1e6 1%) center/15000%;
+	background: #a2d684 radial-gradient(circle, transparent 1%, #a2d684 1%) center/15000%;
 }
 .checkbox-effects:active {
-	background: #84bad9 radial-gradient(circle, transparent 1%, #84bad9 1%) center/15000%;
+	background: #83c95b radial-gradient(circle, transparent 1%, #83c95b 1%) center/15000%;
 }

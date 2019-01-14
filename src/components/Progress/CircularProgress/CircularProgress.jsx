@@ -15,7 +15,7 @@ const CircularProgress = (props) => {
 			<circle
 				className={classNames('circle', className)}
 				fill="none"
-				stroke={color ? color : '#3498db'}
+				stroke={color ? color : '#66cc33'}
 				stroke-width="6"
 				stroke-linecap="round"
 				cx="33"

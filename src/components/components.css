@@ -9,6 +9,7 @@
 @import url(./Tooltip/Tooltip.css);
 @import url(./EditableTextField/EditableTextField.css);
 @import url(./HorizontalScroll/HorizontalScroll.css);
+@import url(./Switch/Switch.css);
 /* @import url(./ExpansionPanel/ExpansionPanel.css);
 @import url(./Menu/Menu.css);
 @import url(./Notification/Notification.css);
@@ -19,10 +20,10 @@
  */
 
 :root {
-	--prussian-blue: #0b3c5d;
-	--sky-blue: #328dc1;
-	--gold-leaf: #d9b310;
-	--ivory-black: #1d2731;
+	--primary-light: #66cc33;
+	--secondary-light: #006236;
+	--background-light: #f4f4f4;
+	--icons-light: #746f6f;
 	--border: #0000008a;
 	--disabled: #cccccc;
 	--white: #ffffff;

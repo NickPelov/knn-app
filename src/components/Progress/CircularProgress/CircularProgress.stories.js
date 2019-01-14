@@ -9,6 +9,6 @@ storiesOf('CircularProgress', module)
 	.addDecorator(centered)
 	.add('Default', () => (
 		<div style={{ display: 'flex', flexDirection: 'column' }}>
-			<CircularProgress color={'#3498db'} />
+			<CircularProgress />
 		</div>
 	));
