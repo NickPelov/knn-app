@@ -3,7 +3,7 @@
 	margin: 0px;
 	width: 20%;
 	height: 100vh;
-	background-color: var(--prussian-blue);
+	background-color: #5aa92d;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -38,22 +38,22 @@
 }
 
 .menuitem:hover {
-	background-color: var(--sky-blue);
+	background-color: var(--primary-light);
 	cursor: pointer;
 }
 
 .menuitem.selected {
-	background-color: var(--sky-blue);
+	background-color: var(--primary-light);
 	cursor: default;
 }
 
 .menuitem-icon {
-	color: white;
+	color: #ffffff;
 	margin-right: 5px;
 }
 
 .menuitem-text {
-	color: white;
+	color: #ffffff;
 	white-space: nowrap;
 	transform: scale(0.8);
 }
