@@ -131,3 +131,9 @@
 .icon-account_circle:before {
 	content: '\e853';
 }
+.icon-history:before {
+	content: '\e94d';
+}
+.icon-alarm:before {
+	content: '\e950';
+}
