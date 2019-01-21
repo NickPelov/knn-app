@@ -1,0 +1,53 @@
+.task-search {
+	display: flex;
+	padding: 5px;
+	margin: 20px;
+	background-color: green;
+}
+
+.tasks-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+	background-color: black;
+}
+.task {
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+	margin: 20px;
+	background-color: grey;
+}
+.task-main {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+}
+.task-meta {
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+}
+.task-info {
+	display: flex;
+	flex-direction: row;
+	padding: 0 10px;
+	align-items: center;
+}
+.task-title {
+	font-size: 18px;
+}
+.task-info > p {
+	padding: 0;
+	align-items: center;
+}
+.task-label {
+	padding: 2.5px 5px;
+	margin: 0 5px;
+	border-radius: 10px;
+}
+.task-label p {
+	padding: 0 2.5px;
+}

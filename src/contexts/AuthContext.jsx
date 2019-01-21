@@ -1,12 +1,12 @@
 import React from 'react';
 
-export const AuthContext = React.createContext({ user });
+export const AuthContext = React.createContext();
 
 export class AuthContextComponent extends React.Component {
 	static contextType = AuthContext;
 	state = {
-		user,
-		token,
+		user: null,
+		token: null,
 	};
 
 	loadUserObject = (user) => {
