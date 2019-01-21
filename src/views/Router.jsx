@@ -2,6 +2,7 @@ import React from 'react';
 import { MemoryRouter as Router, Route, Redirect, Switch } from 'react-router';
 import SignIn from './Auth/SignIn';
 import Home from './Home/Home';
+import Tasks from './Tasks/Tasks';
 import Menu from './Menu/Menu';
 import Settings from './Settings/Settings';
 import SelectUser from './AuthSelectUser/SelectUser';
@@ -14,7 +15,7 @@ const AppRouter = () => (
 		<div className={'app-container'}>
 			<Menu />
 			<Switch>
-				<Route path="/home" exact component={Settings} />
+				<Route path="/home" exact component={Tasks} />
 				<Route path="/messages" exact component={Users} />
 				<Route path="/calendar" component={SignIn} />
 				<Route path="/tasks" component={SelectUser} />

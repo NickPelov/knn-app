@@ -1,15 +1,19 @@
 import React from 'react';
 import AppRouter from './views/Router';
 import AuthRouter from './views/Auth/AuthRouter';
-import { MenuContext, MenuContextComponent } from './contexts/MenuContext';
+import { MenuContextComponent } from './contexts/MenuContext';
+import { AuthContextComponent } from './contexts/AuthContext';
 export default class App extends React.Component {
-	static contextType = MenuContext;
 	state = {
 		loggedIn: true,
 	};
 
 	render() {
 		const { loggedIn } = this.state;
-		return <MenuContextComponent>{loggedIn ? <AppRouter /> : <AuthRouter />}</MenuContextComponent>;
+		return (
+			<AuthContextComponent>
+				<MenuContextComponent>{loggedIn ? <AppRouter /> : <AuthRouter />}</MenuContextComponent>
+			</AuthContextComponent>
+		);
 	}
 }
