@@ -33,7 +33,6 @@
 	outline: none;
 }
 .input-container-textarea {
-	white-space: nowrap;
 	width: 100%;
 	border: 1px solid #888d92;
 	outline: none;
@@ -47,8 +46,7 @@
 
 .input-textarea {
 	margin: 16px 10px 16px 26px;
-	max-height: 270px;
-	height: 100px;
+	max-height: 80px;
 	width: 100%;
 	box-sizing: border-box;
 	border: none;
@@ -56,6 +54,7 @@
 	background-color: transparent;
 	transition: all 0.2s;
 	resize: none;
+	overflow-y: auto;
 }
 
 .input-textarea::-webkit-scrollbar {
@@ -101,7 +100,7 @@
 
 .input-field {
 	box-sizing: border-box;
-	width: 280px;
+	width: 100%;
 	height: 56px;
 	padding: 16px 30px 16px 26px;
 	border: none;

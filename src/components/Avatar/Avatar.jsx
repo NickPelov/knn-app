@@ -9,6 +9,12 @@ const Avatar = (props) => {
 		let styles = '';
 
 		switch (size) {
+			case 'S':
+				styles = type === 'image' ? 'avatar-s' : 'avatar-status-s';
+				break;
+			case 'M':
+				styles = type === 'image' ? 'avatar-m' : 'avatar-status-m';
+				break;
 			case 'L':
 				styles = type === 'image' ? 'avatar-l' : 'avatar-status-l';
 				break;
@@ -44,7 +50,7 @@ const Avatar = (props) => {
 
 Avatar.propTypes = {
 	onClick: PropTypes.func,
-	size: PropTypes.oneOfType([PropTypes.oneOf(['L', 'XL', 'XXL', 'XXXL']), PropTypes.number]),
+	size: PropTypes.oneOfType([PropTypes.oneOf(['S', 'M', 'L', 'XL', 'XXL', 'XXXL']), PropTypes.number]),
 	status: PropTypes.oneOf(['active', 'offline', 'away', 'busy']),
 };
 export default Avatar;

@@ -1,0 +1,25 @@
+.users-container {
+	min-width: 160px;
+	width: 160px;
+	border-left: 1px solid black;
+	margin-left: auto;
+}
+
+.user-container {
+	display: flex;
+	width: 100%;
+	height: 40px;
+	flex-direction: row;
+	align-items: center;
+	cursor: pointer;
+}
+
+.user-container:hover {
+	color: white;
+	background-color: var(--primary-light);
+}
+
+.user-information {
+	font-size: 0.9em;
+	padding: 2px;
+}

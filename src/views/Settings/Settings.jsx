@@ -12,7 +12,7 @@ const Settings = (props) => {
 			<SettingsMenu />
 			<Route path={`${match.path}/connections`} component={SettingsConnections} />
 			<Route path={`${match.path}/account`} component={SettingsAccount} />
-			<Route path={`${match.path}`} component={SettingsMenuList} />
+			<Route path={`${match.path}/menu`} component={SettingsMenuList} />
 		</div>
 	);
 };

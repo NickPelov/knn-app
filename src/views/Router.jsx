@@ -5,9 +5,10 @@ import Home from './Home/Home';
 import Menu from './Menu/Menu';
 import Settings from './Settings/Settings';
 import SelectUser from './AuthSelectUser/SelectUser';
-const Index = () => <h2>Home</h2>;
+import Users from './Users/Users';
+import Messages from './Messages/Messages';
+
 const About = () => <h2>About</h2>;
-const Users = () => <h2>Users</h2>;
 
 const AppRouter = () => (
 	<Router>
@@ -15,12 +16,13 @@ const AppRouter = () => (
 			<Menu />
 			<Switch>
 				<Route path="/home" exact component={Settings} />
-				<Route path="/messages" exact component={Users} />
+				<Route path="/messages/:id" component={Messages} />
 				<Route path="/calendar" component={SignIn} />
 				<Route path="/tasks" component={SelectUser} />
 				<Route path="/settings" component={Settings} />
 				<Redirect to="/home" />
 			</Switch>
+			<Users />
 		</div>
 	</Router>
 );

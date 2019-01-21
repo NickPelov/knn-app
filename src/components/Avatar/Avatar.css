@@ -4,13 +4,14 @@
 	padding: 5px;
 	border-radius: 50%;
 }
+
 .avatar-status {
 	position: absolute;
 	left: 55%;
 	top: 73%;
 	border-radius: 50%;
 	background-color: var(--background-light);
-	border: 2px solid black;
+	border: 1px solid black;
 }
 
 .avatar-status.active {
@@ -31,36 +32,43 @@
 
 .avatar-container {
 	position: relative;
+	display: inline-block;
+}
+
+.avatar-l {
+	width: 32px;
+	height: 32px;
+}
+.avatar-xl {
+	width: 48px;
+	height: 48px;
+}
+.avatar-xxl {
+	width: 64px;
+	height: 64px;
+}
+.avatar-xxxl {
 	width: 80px;
 	height: 80px;
 }
 
-.avatar-l {
-	font-size: 2em;
-}
-.avatar-xl {
-	font-size: 3em;
-}
-.avatar-xxl {
-	font-size: 4em;
-}
-.avatar-xxxl {
-	font-size: 5em;
-}
-
 .avatar-status-l {
-	left: 55%;
-	top: 68%;
+	left: 50%;
+	top: 58%;
 	width: 10px;
 	height: 10px;
 }
 
 .avatar-status-xl {
+	left: 52%;
+	top: 64%;
 	width: 14px;
 	height: 14px;
 }
 
 .avatar-status-xxl {
+	left: 55%;
+	top: 68%;
 	width: 17px;
 	height: 17px;
 }

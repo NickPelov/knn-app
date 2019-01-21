@@ -28,19 +28,43 @@ storiesOf('Avatar', module)
 	.add('Size', () => (
 		<div>
 			<div style={{ display: 'flex', alignItems: 'center' }}>
-				<Avatar size={'L'} status={'active'} />
+				<Avatar
+					size={'L'}
+					status={'active'}
+					image={
+						'https://m.media-amazon.com/images/M/MV5BMjM2OTkyNTY3N15BMl5BanBnXkFtZTgwNzgzNDc2NjE@._V1_CR132,0,761,428_AL_UY268_CR82,0,477,268_AL_.jpg'
+					}
+				/>
 				Large
 			</div>
 			<div style={{ display: 'flex', alignItems: 'center' }}>
-				<Avatar size={'XL'} status={'active'} />
+				<Avatar
+					size={'XL'}
+					status={'active'}
+					image={
+						'https://m.media-amazon.com/images/M/MV5BMjM2OTkyNTY3N15BMl5BanBnXkFtZTgwNzgzNDc2NjE@._V1_CR132,0,761,428_AL_UY268_CR82,0,477,268_AL_.jpg'
+					}
+				/>
 				Extra Large
 			</div>
 			<div style={{ display: 'flex', alignItems: 'center' }}>
-				<Avatar size={'XXL'} status={'active'} />
+				<Avatar
+					size={'XXL'}
+					status={'active'}
+					image={
+						'https://m.media-amazon.com/images/M/MV5BMjM2OTkyNTY3N15BMl5BanBnXkFtZTgwNzgzNDc2NjE@._V1_CR132,0,761,428_AL_UY268_CR82,0,477,268_AL_.jpg'
+					}
+				/>
 				Extra Extra Large
 			</div>
 			<div style={{ display: 'flex', alignItems: 'center' }}>
-				<Avatar size={'XXXL'} status={'active'} />
+				<Avatar
+					size={'XXXL'}
+					status={'active'}
+					image={
+						'https://m.media-amazon.com/images/M/MV5BMjM2OTkyNTY3N15BMl5BanBnXkFtZTgwNzgzNDc2NjE@._V1_CR132,0,761,428_AL_UY268_CR82,0,477,268_AL_.jpg'
+					}
+				/>
 				Extra Extra Extra Large
 			</div>
 		</div>

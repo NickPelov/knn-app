@@ -25,6 +25,7 @@ export default class Input extends PureComponent {
 		large: PropTypes.bool,
 		helperText: PropTypes.string,
 		label: PropTypes.string,
+		clearOnEnter: PropTypes.bool,
 	};
 
 	constructor(props) {
@@ -62,8 +63,8 @@ export default class Input extends PureComponent {
 	};
 
 	onChange = (event) => {
-		const { disabled, onChange } = this.props;
-		const { value } = event.target;
+		const { disabled, onChange, clearOnEnter } = this.props;
+		let { value } = event.target;
 
 		if (disabled) return;
 
@@ -86,6 +87,8 @@ export default class Input extends PureComponent {
 
 		if (code === 13) {
 			this.props.onEnterClick();
+			this.onClear();
+			event.preventDefault();
 		}
 	};
 
@@ -187,7 +190,11 @@ export default class Input extends PureComponent {
 						<Fragment>
 							{prefix ? <span className={classNames('input-prefix')}>{prefix}</span> : undefined}
 							<input
-								className={classNames('input-field', { textStyles: typeof textStyles === 'string', suffixed: suffix })}
+								className={classNames('input-field', {
+									textStyles: typeof textStyles === 'string',
+									suffixed: suffix,
+									className,
+								})}
 								ref={this.input}
 								type={type}
 								placeholder={focused ? placeholder : undefined}
@@ -206,7 +213,7 @@ export default class Input extends PureComponent {
 						</Fragment>
 					) : (
 						<textarea
-							className={classNames('input-textarea', { textStyles: typeof textStyles === 'string' })}
+							className={classNames('input-textarea', className, { textStyles: typeof textStyles === 'string' })}
 							ref={this.input}
 							type={type}
 							placeholder={focused ? undefined : placeholder}
