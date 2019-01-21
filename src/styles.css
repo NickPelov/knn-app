@@ -4,6 +4,7 @@
 @import url(./views/AuthSelectUser/AuthSelectUser.css);
 @import url(./views/Settings/Settings.css);
 @import url(./views/Users/Users.css);
+@import url(./views/Messages/Messages.css);
 h1 {
 	font-family: Roboto, sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -104,6 +105,13 @@ a {
 }
 
 body {
+	font-family: Roboto, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 400;
+	text-decoration: inherit;
+	text-transform: inherit;
+}
+textarea {
 	font-family: Roboto, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-weight: 400;
