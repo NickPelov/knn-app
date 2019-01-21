@@ -3,6 +3,7 @@
 @import url(./views/Home/Home.css);
 @import url(./views/AuthSelectUser/AuthSelectUser.css);
 @import url(./views/Settings/Settings.css);
+@import url(./views/Users/Users.css);
 h1 {
 	font-family: Roboto, sans-serif;
 	-webkit-font-smoothing: antialiased;
