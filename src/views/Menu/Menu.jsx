@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import classNames from 'classnames';
 import MenuItem from './MenuItem';
 import MenuArrow from './MenuArrow';
 import { withRouter } from 'react-router';
+import { MenuContext } from '../../contexts/MenuContext';
 
 class Menu extends React.Component {
 	state = {
 		isCollapsed: false,
-		selected: undefined,
+		selected: 'home',
 	};
 
 	onArrowClick = () => {
@@ -35,57 +36,54 @@ class Menu extends React.Component {
 					collapsed: isCollapsed,
 					expanded: !isCollapsed,
 				})}>
-				<div className={'menu-container-top'}>
-					<MenuItem
-						icon={'icon-bitbucket'}
-						selected={selected === 'home'}
-						text={'Home'}
-						isCollapsed={isCollapsed}
-						onClick={this.onClick.bind(this, 'home')}
-					/>
-					<MenuItem
-						icon={'icon-account_circle'}
-						selected={selected === 'profile'}
-						text={'Profile'}
-						isCollapsed={isCollapsed}
-						onClick={this.onClick.bind(this, 'profile')}
-					/>
-					<MenuItem
-						icon={'icon-message'}
-						selected={selected === 'messages'}
-						text={'Messages'}
-						isCollapsed={isCollapsed}
-						onClick={this.onClick.bind(this, 'messages')}
-					/>
-					<MenuItem
-						icon={'icon-calendar'}
-						selected={selected === 'calendar'}
-						text={'Calendar'}
-						isCollapsed={isCollapsed}
-						onClick={this.onClick.bind(this, 'calendar')}
-					/>
-					<MenuItem
-						icon={'icon-tasks'}
-						selected={selected === 'tasks'}
-						text={'Tasks'}
-						isCollapsed={isCollapsed}
-						onClick={this.onClick.bind(this, 'tasks')}
-					/>
-				</div>
-				<div className={'menu-container-bottom'}>
-					<MenuItem
-						icon={'icon-settings'}
-						selected={selected === 'settings'}
-						text={'Settings'}
-						isCollapsed={isCollapsed}
-						onClick={this.onClick.bind(this, 'settings')}
-					/>
-					<MenuItem icon={'icon-exit'} text={'Log Out'} isCollapsed={isCollapsed} onClick={this.onClickLogout} />
-					<MenuArrow icon={'icon-double-arrow'} isCollapsed={isCollapsed} onClick={this.onArrowClick} />
-				</div>
+				<MenuContext.Consumer>
+					{({ menuItemOrder, menuItems }) => {
+						return (
+							<Fragment>
+								<div className={'menu-container-top'}>
+									{menuItemOrder.map((key) => {
+										const item = menuItems[key];
+										if (item.position === 'top' || item.position === 'both') {
+											return (
+												<MenuItem
+													key={item.id}
+													icon={item.icon}
+													selected={selected === item.id}
+													text={item.text}
+													isCollapsed={isCollapsed}
+													onClick={this.onClick.bind(this, item.id)}
+												/>
+											);
+										}
+									})}
+								</div>
+								<div className={'menu-container-bottom'}>
+									{menuItemOrder.map((key) => {
+										const item = menuItems[key];
+										if (item.position === 'bottom' || item.position === 'both') {
+											return (
+												<MenuItem
+													key={item.id}
+													icon={item.icon}
+													selected={selected === item.id}
+													text={item.text}
+													isCollapsed={isCollapsed}
+													onClick={this.onClick.bind(this, item.id)}
+												/>
+											);
+										}
+									})}
+									<MenuArrow icon={'icon-double-arrow'} isCollapsed={isCollapsed} onClick={this.onArrowClick} />
+								</div>
+							</Fragment>
+						);
+					}}
+				</MenuContext.Consumer>
 			</div>
 		);
 	}
 }
 
-export default withRouter(Menu);
+const MenuWithRouter = withRouter(Menu);
+
+export default MenuWithRouter;
