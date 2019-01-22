@@ -29,12 +29,12 @@ export const menuItems = {
 		text: 'Tasks',
 		position: 'top',
 	},
-	checkin: {
-		id: 'checkin',
-		icon: 'icon-tasks',
-		text: 'Check In',
-		position: 'top',
-	},
+	// checkin: {
+	// 	id: 'checkin',
+	// 	icon: 'icon-tasks',
+	// 	text: 'Check In',
+	// 	position: 'top',
+	// },
 	settings: {
 		id: 'settings',
 		icon: 'icon-settings',

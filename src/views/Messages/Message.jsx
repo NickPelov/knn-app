@@ -28,7 +28,7 @@ class Message extends React.Component {
 	};
 
 	onClickScheduleEvent = () => {
-		this.setState({ showNotification: true });
+		this.setState({ showNotification: true, parseResult: undefined });
 		setTimeout(() => {
 			this.setState({ showNotification: false });
 		}, 2000);
@@ -51,7 +51,7 @@ class Message extends React.Component {
 				) : (
 					undefined
 				)}
-				<Notification title={'Test'} text={'Event has been scheduled'} isVisible={showNotification} />
+				<Notification title={'Success'} text={'Event has been scheduled'} isVisible={showNotification} />
 			</div>
 		);
 	}

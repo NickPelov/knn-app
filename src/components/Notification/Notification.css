@@ -1,18 +1,39 @@
 /* Stylesheet for the Notification.jsx component */
 .notification-container {
 	width: 300px;
-	height: 40px;
-	border: 1px solid black;
+	height: 80px;
+	border-radius: 4px;
 	position: absolute;
 	bottom: 20px;
 	left: -300px;
 	transition: 1s ease;
-	background-color: white;
+	background-color: var(--background-light);
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	padding: 10px;
 }
 
 .notification-container.show {
 	left: 50px;
+}
+
+.notification-title {
+	font-size: 1.2em;
+}
+
+.notification-text {
+	font-size: 0.9em;
+	color: #746f6f;
+}
+
+.notification-info-container {
+	display: flex;
+	flex-direction: column;
+	order: 2;
+	margin: 0px 10px;
+}
+
+.notification-icon {
+	color: var(--primary-light);
 }

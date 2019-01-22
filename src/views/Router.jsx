@@ -17,8 +17,8 @@ const AppRouter = () => (
 			<Menu />
 			<Switch>
 				<Route path="/home" exact component={Home} />
-				<Route path="/messages/:id" exact component={Messages} />
-				<Route path="/calendar" component={SignIn} />
+				<Route path="/messages/:id" component={Messages} />
+
 				<Route path="/tasks" component={Tasks} />
 				<Route path="/settings" component={Settings} />
 				<Redirect to="/home" />
@@ -29,3 +29,5 @@ const AppRouter = () => (
 );
 
 export default AppRouter;
+
+//<Route path="/calendar" component={SignIn} />

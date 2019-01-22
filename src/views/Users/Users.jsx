@@ -16,15 +16,33 @@ const Users = (props) => {
 			],
 			status: 'online',
 		},
-		{ id: 1, firstName: 'Nikolay', lastName: 'Pelov', message: [], status: 'online' },
-		{ id: 2, firstName: 'Kaloyan', lastName: 'Ivanov', message: [], status: 'offline' },
-		{ id: 3, firstName: 'Petur', lastName: 'Makriev', message: [], status: 'online' },
-		{ id: 4, firstName: 'Jurian', lastName: 'Berg', message: [], status: 'online' },
-		{ id: 5, firstName: 'Mathijs', lastName: 'Schoolen', message: [], status: 'offline' },
-		{ id: 6, firstName: 'Siyana', lastName: 'Stoyanova', message: [], status: 'online' },
-		{ id: 7, firstName: 'Ox', lastName: 'Jenkins', message: [], status: 'offline' },
-		{ id: 8, firstName: 'Fabian', lastName: 'Krikke', message: [], status: 'online' },
-		{ id: 9, firstName: 'Ivan', lastName: 'Stoilchev', message: [], status: 'offline' },
+		{
+			id: 1,
+			firstName: 'Nikolay',
+			lastName: 'Pelov',
+			message: [],
+			status: 'online',
+			avatar:
+				'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-1/c66.66.826.826a/s32x32/539391_418502121518706_1299767261_n.jpg?_nc_cat=109&_nc_ht=scontent-amt2-1.xx&oh=5132e9dad866560da4a080f0e9272137&oe=5CFA9D57',
+		},
+		{
+			id: 2,
+			firstName: 'Kaloyan',
+			lastName: 'Ivanov',
+			message: [],
+			status: 'offline',
+			avatar:
+				'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-1/p24x24/12002943_1007582402638121_997236799241593783_n.jpg?_nc_cat=106&_nc_ht=scontent-amt2-1.xx&oh=3fac77067a4380bbe862011639a46644&oe=5CBFB13A',
+		},
+		{
+			id: 3,
+			firstName: 'Veselin',
+			lastName: 'Manev',
+			message: [],
+			status: 'offline',
+			avatar:
+				'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-1/p32x32/11329750_1606300316294911_5963542878308380939_n.jpg?_nc_cat=106&_nc_ht=scontent-amt2-1.xx&oh=bca4be3041604256402198a5d6a0efee&oe=5CBB81E5',
+		},
 	];
 	return (
 		<div className={'users-container'}>
