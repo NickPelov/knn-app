@@ -1,30 +1,60 @@
 import React from 'react';
 import classNames from 'classnames';
 import Icon from '../../components/Icon/Icon';
+import Tooltip from '../../components/Tooltip/Tooltip';
+import Notification from '../../components/Notification/Notification';
 
-const Message = (props) => {
-	const { body, isReceived } = props;
-	const library = ['Something'];
-	function parseMessage() {
-		for (let string of library) {
-			if (body.indexOf(string) > -1) {
-				console.log('here');
+class Message extends React.Component {
+	state = {
+		parseResult: undefined,
+		showNotification: false,
+	};
+	library = ['Tomorrow ', 'Thursday ', 'Monday ', 'Thuesday ', 'Wednesday ', 'Friday ', 'Saturday ', 'Sunday '];
+
+	componentDidMount() {
+		this.parseMessage();
+	}
+	parseMessage = () => {
+		const { body } = this.props;
+		const { parseResult } = this.state;
+		if (parseResult) return true;
+		for (let string of this.library) {
+			const index = body.indexOf(string);
+			if (index > -1) {
+				this.setState({ parseResult: body.slice(index, index + string.length + 5) });
 				return true;
 			}
 		}
-		forceUpdate();
-	}
+	};
 
-	return (
-		<div className={classNames('message-container', { received: isReceived })}>
-			<span className={classNames('message-body', { received: isReceived })}>{body}</span>
-			{parseMessage() === true ? (
-				<Icon icon={'icon-notifications_active'} size={'S'} className={'message-notification'} />
-			) : (
-				undefined
-			)}
-		</div>
-	);
-};
+	onClickScheduleEvent = () => {
+		this.setState({ showNotification: true });
+		setTimeout(() => {
+			this.setState({ showNotification: false });
+		}, 2000);
+	};
+
+	render() {
+		const { body, isReceived } = this.props;
+		const { showNotification, parseResult } = this.state;
+		return (
+			<div className={classNames('message-container', { received: isReceived })}>
+				<span className={classNames('message-body', { received: isReceived })}>{body}</span>
+				{parseResult ? (
+					<Tooltip
+						text={`Do you want to create an event for ${parseResult}?`}
+						position={'top'}
+						className={'message-notification'}
+						onClick={this.onClickScheduleEvent}>
+						<Icon icon={'icon-notifications_active'} size={'S'} />
+					</Tooltip>
+				) : (
+					undefined
+				)}
+				<Notification title={'Test'} text={'Event has been scheduled'} isVisible={showNotification} />
+			</div>
+		);
+	}
+}
 
 export default Message;

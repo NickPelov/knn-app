@@ -1,0 +1,18 @@
+/* Stylesheet for the Notification.jsx component */
+.notification-container {
+	width: 300px;
+	height: 40px;
+	border: 1px solid black;
+	position: absolute;
+	bottom: 20px;
+	left: -300px;
+	transition: 1s ease;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+
+.notification-container.show {
+	left: 50px;
+}

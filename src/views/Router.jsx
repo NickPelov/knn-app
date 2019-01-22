@@ -16,8 +16,8 @@ const AppRouter = () => (
 		<div className={'app-container'}>
 			<Menu />
 			<Switch>
-				<Route path="/home" exact component={Tasks} />
-				<Route path="/messages" exact component={Users} />
+				<Route path="/home" exact component={Home} />
+				<Route path="/messages/:id" exact component={Messages} />
 				<Route path="/calendar" component={SignIn} />
 				<Route path="/tasks" component={SelectUser} />
 				<Route path="/settings" component={Settings} />

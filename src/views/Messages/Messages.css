@@ -1,5 +1,6 @@
 .messages-view-container {
 	width: calc(100vw - 165px - 50px - 150px);
+	min-width: 500px;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -56,18 +57,21 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	order: 2;
 }
 
 .message-body.received {
 	background-color: #dbdbdb;
 	color: black;
 	align-self: flex-start;
+	order: 0;
 }
 
 .message-container {
 	margin: 20px 0px;
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
 }
 
 .message-container.received {
@@ -76,4 +80,8 @@
 
 .message-notification {
 	width: 30px;
+	order: 1;
+	cursor: pointer;
+	user-select: none;
+	margin-top: 10px;
 }
