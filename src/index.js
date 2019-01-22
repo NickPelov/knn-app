@@ -18,7 +18,7 @@ const createWindow = async () => {
 		height: 720,
 		frame: true,
 		autoHideMenuBar: true,
-		title: 'ZOEY',
+		title: 'Zoey',
 	});
 
 	// and load the index.html of the app.
@@ -26,7 +26,7 @@ const createWindow = async () => {
 	// Open the DevTools.
 	if (isDevMode) {
 		await installExtension(REACT_DEVELOPER_TOOLS.id);
-		mainWindow.webContents.openDevTools();
+		// mainWindow.webContents.openDevTools();
 
 		//if enableLiveReload() does not work kek
 		electron.globalShortcut.register('f5', function() {
