@@ -16,10 +16,10 @@ const AppRouter = () => (
 		<div className={'app-container'}>
 			<Menu />
 			<Switch>
-				<Route path="/home" exact component={Tasks} />
+				<Route path="/home" exact component={Home} />
 				<Route path="/messages" exact component={Users} />
 				<Route path="/calendar" component={SignIn} />
-				<Route path="/tasks" component={SelectUser} />
+				<Route path="/tasks" component={Tasks} />
 				<Route path="/settings" component={Settings} />
 				<Redirect to="/home" />
 			</Switch>
