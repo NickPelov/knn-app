@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router';
 import Task from './Task';
+import Icon from '../../components/Icon/Icon';
 
 class Tasks extends Component {
 	context = null;
@@ -22,7 +22,14 @@ class Tasks extends Component {
 		const { tasks } = this.state;
 		return (
 			<div className={'tasks-container'}>
-				<div className={'task-search'} />
+				<div className={'task-search'}>
+					<div className="search-menu">
+						<Icon icon={'icon-menu'} />
+					</div>
+					<div className="search-input">
+						<Icon icon={'icon-search'} />
+					</div>
+				</div>
 				{tasks.map((task, index) => {
 					{
 						console.log(task);
